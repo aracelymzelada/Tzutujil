@@ -34,13 +34,6 @@ body {
   transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.social-icons a {
-  display: inline-block;
-  border-radius: 50%;
-  padding: 0.4rem;
-  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
 .social-icons a img {
   width: 24px;
   height: 24px;
@@ -48,7 +41,7 @@ body {
 }
 
 .subscribe-button {
-  background-color: #0b5394;
+  background-color: #4e9b8b;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -60,11 +53,11 @@ body {
 }
 
 .subscribe-button:hover {
-  background-color: #073763;
+  background-color: #4e9b8b;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
   transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  background-color: #073763; /* un azul más oscuro al hacer hover */
+  background-color: #4e6a5b; /* un azul más oscuro al hacer hover */
 }
 
 
@@ -80,7 +73,7 @@ body {
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #0b5394;
+  color: #4e9b8b;
 }
 
 .nav-links {
@@ -100,7 +93,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #0b5394;
+  color: #4e6a5b;
 }
 
 .search-icon img {
@@ -138,7 +131,7 @@ body {
 }
 
 .article-info .tag {
-  background-color: #0b5394;
+  background-color: #4e9b8b;
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
   font-size: 0.8rem;
@@ -166,7 +159,7 @@ body {
 }
 
 .side-articles .tag {
-  background-color: #0b5394;
+  background-color: #4e9b8b;
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
@@ -177,7 +170,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #0b5394;
+  background-color: #4e9b8b;
   color: white;
   text-align: center;
   padding: 1rem 0;
