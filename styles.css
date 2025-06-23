@@ -67,7 +67,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #e8f0fe;
+  background-color: #f8efca;
 }
 
 .navbar .logo {
@@ -93,7 +93,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #4e6a5b;
+  color: #4e9b8b;
 }
 
 .search-icon img {
@@ -106,7 +106,7 @@ body {
   flex-wrap: wrap;
   padding: 2rem;
   gap: 2rem;
-  background-color: #fff;
+  background-color: #f8efca;
 }
 
 .main-article {
@@ -124,8 +124,7 @@ body {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: rgba(0,0,0,0.6);
-  color: white;
+  color: #f8efca;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -147,7 +146,7 @@ body {
 }
 
 .side-articles article {
-  background-color: #e8f0fe;
+  background-color: #f8efca;
   padding: 1rem;
   border-radius: 10px;
 }
@@ -156,6 +155,21 @@ body {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 0.5rem;
+}
+
+/* Mantener la imagen del artículo principal como está */
+.main-article img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Modificar solo las imágenes de los artículos secundarios */
+.side-articles article img {
+  width: 100%;
+  height: 200px; /* ajusta si necesitas más o menos alto */
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .side-articles .tag {
@@ -171,8 +185,101 @@ body {
 /* Footer */
 footer {
   background-color: #4e9b8b;
-  color: white;
+  color: #000;
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+
+  .top-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .featured-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .main-article,
+  .side-articles {
+    width: 100%;
+  }
+
+  .side-articles article img {
+    height: 160px;
+  }
+
+  .article-info {
+    position: static;
+    background-color: transparent;
+    color: #333;
+    padding: 0;
+  }
+
+  .article-info .tag {
+    background-color: #4e9b8b;
+    color: white;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+
+  .subscribe-button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .search-icon {
+    align-self: flex-end;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Menú hamburguesa oculto por defecto */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mostrar solo en móvil */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
