@@ -1,83 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio |Idioma maya Tz'utujil</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio | Idioma maya Tz'utujil</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <header>
+  <header>
     <div class="top-bar">
-        <div class="social-icons">
-    <a href="https://www.instagram.com/tu_cuenta" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/instagram.svg" alt="Instagram">
-    </a>
-    <a href="https://www.facebook.com/tu_cuenta" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/facebook.svg" alt="Facebook">
-    </a>
-    <a href="https://www.tiktok.com/@tu_cuenta" target="_blank" rel="noopener noreferrer">
-        <img src="assets/img/tiktok.svg" alt="TikTok">
-    </a>
-</div>
-
-        <div class="logo">Idioma maya Tz'utujil</div>
-
-        <a class="subscribe-button" href="https://wa.me/50212345678" target="_blank" rel="noopener noreferrer">Clases Online</a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/tu_cuenta" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/tu_cuenta" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.tiktok.com/@tu_cuenta" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/tiktok.svg" alt="TikTok" />
+        </a>
+      </div>
+      <div class="logo">Idioma maya Tz'utujil</div>
+      <a class="subscribe-button" href="https://wa.me/50212345678" target="_blank" rel="noopener noreferrer">Clases Online</a>
     </div>
-        <nav class="navbar">
-            <div class="logo">Idima Tz'utujil Guatemala</div>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-            <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Idioma</a></li>
-                <li><a href="#">Cultura</a></li>
-                <li><a href="#">Artículos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="featured-content">
-            <article class="main-article">
-                <img src="assets/img/portada1.jpg" alt="Artículo destacado">
-                <div class="article-info">
-                    <span class="tag">IDIOMA</span>
-                    <h2>Aprende a saludar en Tz'utujil: Una guía para principiantes</h2>
-                    <p>Publicado el 23 de junio de 2025</p>
-                </div>
-            </article>
-            <div class="side-articles">
-                <article>
-                    <img src="assets/img/cultura1.jpg" alt="Artículo de cultura">
-                    <span class="tag">CULTURA</span>
-                    <h3>5 tradiciones tz'utujiles que siguen vivas hoy</h3>
-                    <p>23 junio 2025</p>
-                </article>
-                <article>
-                    <img src="assets/img/material1.jpg" alt="Material didáctico">
-                    <span class="tag">MATERIAL</span>
-                    <h3>Nuevo cuaderno de ejercicios para primer ciclo</h3>
-                    <p>23 junio 2025</p>
-                </article>
+    <nav class="navbar">
+      <div class="logo">Idioma Tz'utujil Guatemala</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Idioma</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Artículos</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Artículos destacados -->
+    <section class="featured-content">
+      <article class="main-article">
+        <img src="assets/img/portada1.jpg" alt="Artículo destacado" />
+        <div class="article-info">
+          <span class="tag">IDIOMA</span>
+          <h2>Aprende a saludar en Tz'utujil: Una guía para principiantes</h2>
+          <p>Publicado el 23 de junio de 2025</p>
+        </div>
+      </article>
+
+      <div class="side-articles">
+        <a href="cultura.html" class="side-article-link">
+          <article>
+            <img src="assets/img/cultura1.jpg" alt="Artículo de cultura" />
+            <span class="tag">CULTURA</span>
+            <h3>5 tradiciones tz'utujiles que siguen vivas hoy</h3>
+            <p>23 junio 2025</p>
+          </article>
+        </a>
+
+        <article>
+          <img src="assets/img/material1.jpg" alt="Material didáctico" />
+          <span class="tag">MATERIAL</span>
+          <h3>Nuevo cuaderno de ejercicios para primer ciclo</h3>
+          <p>23 junio 2025</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Tienda -->
+    <section class="store-section">
+      <div class="store-header">
+        <h2>Tienda</h2>
+        <a href="#">Ver todo</a>
+      </div>
+
+      <div class="store-wrapper">
+        <button class="arrow left" onclick="scrollStore(-1)">‹</button>
+
+        <div class="store-carousel" id="storeCarousel">
+          <a href="producto1.html" class="store-item">
+            <img src="assets/img/material1.jpg" alt="Producto 1" />
+            <div class="info">
+              <span class="tag">MATERIAL</span>
+              <h3>Cuaderno de ejercicios 1</h3>
+              <p>Ver más</p>
             </div>
-        </section>
-    </main>
+          </a>
 
-    <footer>
-        <p>&copy; 2025 Tz'utujil Educativo. Todos los derechos reservados.</p>
-    </footer>
+          <a href="producto2.html" class="store-item">
+            <img src="assets/img/material2.jpg" alt="Producto 2" />
+            <div class="info">
+              <span class="tag">MATERIAL</span>
+              <h3>Tarjetas de vocabulario</h3>
+              <p>Ver más</p>
+            </div>
+          </a>
 
-    <script>
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-</script>
+          <a href="producto3.html" class="store-item">
+            <img src="assets/img/material3.jpg" alt="Producto 3" />
+            <div class="info">
+              <span class="tag">MATERIAL</span>
+              <h3>Posters culturales</h3>
+              <p>Ver más</p>
+            </div>
+          </a>
 
+          <a href="producto4.html" class="store-item">
+            <img src="assets/img/material4.jpg" alt="Producto 4" />
+            <div class="info">
+              <span class="tag">MATERIAL</span>
+              <h3>Guía para docentes</h3>
+              <p>Ver más</p>
+            </div>
+          </a>
+
+          <a href="producto5.html" class="store-item">
+            <img src="assets/img/material5.jpg" alt="Producto 5" />
+            <div class="info">
+              <span class="tag">MATERIAL</span>
+              <h3>Lecturas en Tz'utujil</h3>
+              <p>Ver más</p>
+            </div>
+          </a>
+        </div>
+
+        <button class="arrow right" onclick="scrollStore(1)">›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tz'utujil Educativo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show');
+    }
+
+    function scrollStore(direction) {
+      const carousel = document.getElementById('storeCarousel');
+      const scrollAmount = 300;
+      carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  </script>
 </body>
 </html>
