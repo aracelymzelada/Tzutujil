@@ -1,0 +1,225 @@
+/* ==== Reset general ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8efca ;
+  color: #333;
+}
+
+/* ==== Encabezado principal ==== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-header .logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-header nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.main-header nav a.active {
+  text-decoration: none;
+}
+
+.main-header nav a:hover {
+  color: #4e9b8b;
+  transition: color 0.3s ease;
+}
+
+
+
+/* ==== Hero de Tienda ==== */
+.store-hero {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  background-color: #f8efca;
+}
+
+.store-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #4e9b8b;
+}
+
+.store-hero p {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* ==== Filtros ==== */
+.store-filters {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.store-filters h2 {
+  margin-bottom: 1rem;
+}
+
+.store-filters form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.store-filters select,
+.store-filters button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.store-filters button {
+  background-color: #4e6a5b;
+  box-shadow: 0 4px 10px #ffffff(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  background-color: #4e9b8b ; /* un azul más oscuro al hacer hover */
+}
+
+.store-filters button:hover {
+  background-color: #4e6a5b ;
+}
+
+.categorias-didacticas {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.categorias-didacticas h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #4e9b8b;
+}
+
+.categoria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.categoria-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.categoria-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.categoria-item span {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.categoria-item:hover {
+  transform: scale(1.05);
+}
+
+/* ==== Grid de productos ==== */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.store-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.store-item:hover {
+  transform: scale(1.03);
+}
+
+.store-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.store-item .info {
+  padding: 1rem;
+}
+
+.store-item .tag {
+  font-size: 0.8rem;
+  background-color: #a7ffeb;
+  color: #4e9b8b;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.store-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.store-item p {
+  font-weight: bold;
+  color: #4e9b8b;
+}
+
+/* ==== Footer ==== */
+.main-footer {
+  background-color: #4e9b8b;
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

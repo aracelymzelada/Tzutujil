@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de materiales didácticos en maya Tz'utujil | Libros, fichas y juegos educativos</title>
+  <meta name="description" content="Explora nuestra tienda de materiales didácticos para aprender y enseñar el idioma maya Tz'utujil. Libros, fichas y juegos para todos los niveles educativos.">
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="Tienda de materiales didácticos en maya Tz'utujil">
+  <meta property="og:description" content="Libros, fichas y juegos para aprender el idioma Tz'utujil.">
+  <meta property="og:image" content="https://tuweb.com/assets/img/imagen-tienda.jpg">
+  <meta property="og:url" content="https://tuweb.com/tienda.html">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <a href="index.html" class="logo">Idioma maya Tz'utujil hojas de trabajo</a>
+    <nav role="navigation" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html" class="active">Tienda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="store-page">
+
+    <section class="store-hero">
+      <h1>Catálogo de materiales didácticos</h1>
+      <p>Explora libros, fichas, juegos y más para la enseñanza del maya Tz'utujil.</p>
+    </section>
+
+    <section class="categorias-didacticas">
+      <h2>Explora por categoría</h2>
+      <div class="categoria-grid">
+        <a href="#" class="categoria-item" style="background-image: url('assets/img/libros.jpg');"><span>Libros</span></a>
+        <a href="#" class="categoria-item" style="background-image: url('assets/img/fichas.jpg');"><span>Fichas</span></a>
+        <a href="#" class="categoria-item" style="background-image: url('assets/img/juegos.jpg');"><span>Juegos</span></a>
+        <a href="#" class="categoria-item" style="background-image: url('assets/img/preescolar.jpg');"><span>Preescolar</span></a>
+        <a href="#" class="categoria-item" style="background-image: url('assets/img/primaria.jpg');"><span>Primaria</span></a>
+        <a href="#" class="categoria-item" style="background-image: url('assets/img/secundaria.jpg');"><span>Secundaria</span></a>
+      </div>
+    </section>
+
+    <section class="store-filters" aria-label="Filtros de productos">
+      <h2>Filtrar por:</h2>
+      <form>
+        <select name="nivel" aria-label="Filtrar por nivel educativo">
+          <option value="">Nivel educativo</option>
+          <option value="preescolar">Preescolar</option>
+          <option value="primaria">Primaria</option>
+          <option value="secundaria">Secundaria</option>
+        </select>
+
+        <select name="tipo" aria-label="Filtrar por tipo de recurso">
+          <option value="">Tipo de recurso</option>
+          <option value="libro">Libro</option>
+          <option value="ficha">Ficha</option>
+          <option value="juego">Juego</option>
+        </select>
+
+        <select name="precio" aria-label="Filtrar por precio">
+          <option value="">Precio</option>
+          <option value="bajo">Menos de Q25</option>
+          <option value="medio">Q25 - Q50</option>
+          <option value="alto">Más de Q50</option>
+        </select>
+
+        <button type="submit">Aplicar filtros</button>
+      </form>
+    </section>
+
+    <section class="store-grid" aria-label="Lista de productos">
+
+      <article class="store-item" data-nivel="primaria" data-tipo="libro" data-precio="medio">
+        <a href="cuaderno-ejercicios-tzutujil.html">
+          <img src="assets/img/material1.jpg" alt="Cuaderno de ejercicios para aprender maya Tz'utujil" />
+          <div class="info">
+            <span class="tag">Libro</span>
+            <h3>Cuaderno de ejercicios 1</h3>
+            <p>Q25.00</p>
+          </div>
+        </a>
+      </article>
+
+      <article class="store-item" data-nivel="primaria" data-tipo="juego" data-precio="alto">
+        <a href="juego-tarjetas-tzutujil.html">
+          <img src="assets/img/material2.jpg" alt="Juego de tarjetas educativas en maya Tz'utujil" />
+          <div class="info">
+            <span class="tag">Juego</span>
+            <h3>Juego de tarjetas</h3>
+            <p>Q40.00</p>
+          </div>
+        </a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="main-footer" role="contentinfo">
+    <p>&copy; 2025 Idioma maya Tz'utujil. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.store-filters form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nivel = this.nivel.value;
+      const tipo = this.tipo.value;
+      const precio = this.precio.value;
+
+      const items = document.querySelectorAll('.store-item');
+
+      items.forEach(item => {
+        const matchesNivel = !nivel || item.dataset.nivel === nivel;
+        const matchesTipo = !tipo || item.dataset.tipo === tipo;
+        const matchesPrecio = !precio || item.dataset.precio === precio;
+
+        item.style.display = (matchesNivel && matchesTipo && matchesPrecio) ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
