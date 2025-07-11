@@ -129,12 +129,17 @@
 </section>
 
   </main>
+    <footer class="main-footer" role="contentinfo">
+    <p>&copy; <span id="anio-actual"></span> Idioma maya Tz'utujil. Todos los derechos reservados.</p>
+  </footer>
 
   <script>
     function playAudio(nombre) {
       const audio = new Audio(`assets/audio/${nombre}.mp3`);
       audio.play();
     }
+
+    document.getElementById("anio-actual").textContent = new Date().getFullYear();
   </script>
 
 </body>

@@ -100,7 +100,7 @@ body {
   box-shadow: 0 4px 10px #ffffff(0, 0, 0, 0.2);
   transform: translateY(-2px);
   transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  background-color: #4e9b8b ; /* un azul más oscuro al hacer hover */
+  background-color: #4e9b8b ; /* más oscuro al hacer hover */
 }
 
 .store-filters button:hover {
@@ -165,9 +165,11 @@ body {
 /* ==== Grid de productos ==== */
 .store-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+  grid-template-columns: repeat(3, 1fr); /* tres columnas fijas */
+  gap: 1rem;
+  padding: 1rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .store-item {
@@ -178,6 +180,10 @@ body {
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s ease;
+  height: 260px; /* controla el alto fijo */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .store-item:hover {
@@ -186,7 +192,8 @@ body {
 
 .store-item img {
   width: 100%;
-  height: auto;
+  height: 140px;
+  object-fit: cover;
   display: block;
 }
 

@@ -68,7 +68,7 @@
     <section class="featured-content">
 
     <!-- Artículo principal clickeable -->
-    <a href="idioma.html" class="main-article-link">
+    <a href="gramatica.html" class="main-article-link">
       <article class="main-article">
         <img src="assets/img/portada1.jpg" alt="Aprende-tzutujil" />
         <div class="article-info">
@@ -79,7 +79,7 @@
       </article>
 
       <div class="side-articles">
-        <a href="cultura.html" class="side-article-link">
+        <a href="tienda.html" class="side-article-link">
           <article>
             <img src="assets/img/cultura1.jpg" alt="tradiciones-tzutujiles" />
             <span class="tag">CULTURA</span>
@@ -88,7 +88,7 @@
           </article>
         </a>
 
-        <a href="material.html" class="side-article-link">
+        <a href="tienda.html" class="side-article-link">
         <article>
         <article>
           <img src="assets/img/material1.jpg" alt="Material-didactico-en-tzutujil" />
@@ -232,7 +232,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Aprender Tz'utujil Guatemala. Todos los derechos reservados.</p>
+    <p>&copy; <span id="anio-actual"></span> Idioma maya Tz'utujil. Todos los derechos reservados.</p>
   </footer>
 
   <script>
@@ -250,5 +250,9 @@
       });
     }
   </script>
+
+  <script>
+  document.getElementById("anio-actual").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

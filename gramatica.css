@@ -179,7 +179,7 @@ audio {
 }
 
 .video-card {
-  background-color: #fff;
+  background-color:#e0ded1;
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -199,4 +199,27 @@ audio {
   margin-top: 1rem;
   font-size: 1rem;
   color: #333;
+}
+
+.main-footer {
+  width: 100%;
+  background-color: #4e9b8b;
+  color: #e0ded1;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  border-top: 1px solid #e0ded1;
+}
+
+
+@media (max-width: 450px) {
+  .grid-videos {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-volver {
+    width: 90%;
+    text-align: center;
+  }
 }
