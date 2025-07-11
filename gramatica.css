@@ -1,0 +1,154 @@
+/* === Estilo modernizado y centrado para gramatica.html === */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8efca;
+  color: #4e9b8b;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Encabezado */
+.gramatica-hero {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 2rem 1rem;
+  background: linear-gradient(to bottom, #fef9e6, #f8efca);
+  border-bottom: 2px solid #e6dba8;
+}
+
+.gramatica-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+  color: #4e9b8b;
+}
+
+.gramatica-hero p {
+  font-size: 1.2rem;
+  color: #000;
+  opacity: 0.8;
+}
+
+/* Tabla contenedora */
+.tabla-sonidos {
+  width: 90%;
+  max-width: 1000px;
+  margin: 3rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla */
+.tabla-sonidos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-sonidos th,
+.tabla-sonidos td {
+  border-bottom: 1px solid #eee;
+  padding: 1.2rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla-sonidos th {
+  background-color: #f3fdfc;
+  color: #31786d;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tabla-sonidos td {
+  font-size: 1.05rem;
+}
+
+/* Botones de audio */
+.audio-btn {
+  background-color: #e3f6f3;
+  border: 1px solid #b0e4d9;
+  padding: 8px 14px;
+  margin: 6px 6px 6px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 0.95rem;
+  color: #31786d;
+}
+
+.audio-btn:hover {
+  background-color: #c2eee5;
+  transform: scale(1.05);
+}
+
+.btn-volver {
+  display: inline-block;
+  margin: 2rem auto 4rem;
+  background-color: #4e9b8b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-volver:hover {
+  background-color: #3a5144;
+  transform: translateY(-2px);
+}
+
+.acordeon-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 3rem auto 4rem;
+}
+
+.titulo-acordeon {
+  font-size: 1.6rem;
+  color: #4e6a5b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+details {
+  background-color: #4e9b8b;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+summary {
+  font-weight: 600;
+  color: #f5f2fc;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+details[open] {
+  background-color: #f5f2fc;
+}
+
+details p, details ul {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+audio {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 10px;
+}

@@ -1,0 +1,115 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gramática Tz'utujil</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gramática | Idioma Tz'utujil</title>
+  <link rel="stylesheet" href="gramatica.css" />
+
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    button.audio-btn {
+      margin: 3px;
+      padding: 6px 10px;
+      cursor: pointer;
+      background: #e7f3ff;
+      border: 1px solid #b3d7ff;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="btn-volver" href="index.html">← Volver al inicio</a>
+    <h1>Gramática Tz'utujil: Consonantes glotalizadas</h1>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Consonante</th>
+          <th>Ejemplos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>bʼ</td>
+          <td>
+            <button class="audio-btn" onclick="playAudio('b_aq')">bʼaq 🔊</button>
+            <button class="audio-btn" onclick="playAudio('b_is')">bʼis 🔊</button>
+            <button class="audio-btn" onclick="playAudio('b_aluk')">bʼaluk 🔊</button>
+            <button class="audio-btn" onclick="playAudio('b_olaj')">bʼolaj 🔊</button>
+          </td>
+        </tr>
+        <tr>
+          <td>chʼ</td>
+          <td>
+            <button class="audio-btn" onclick="playAudio('ch_at')">chʼat 🔊</button>
+            <button class="audio-btn" onclick="playAudio('ch_er')">chʼer 🔊</button>
+            <button class="audio-btn" onclick="playAudio('ch_am')">chʼam 🔊</button>
+            <button class="audio-btn" onclick="playAudio('ch_oj')">chʼoj 🔊</button>
+          </td>
+        </tr>
+        <!-- Puedes seguir agregando más consonantes con sus ejemplos -->
+      </tbody>
+    </table>
+
+    <section class="acordeon-section">
+
+  <h2 class="titulo-acordeon">🗣️ Escucha y practica</h2>
+
+  <details>
+    <summary>🎧 Escuchar conversación</summary>
+    <audio controls>
+      <source src="assets/audio/dialogo1.mp3" type="audio/mp3">
+      Tu navegador no soporta audio.
+    </audio>
+  </details>
+
+  <details>
+    <summary>📝 Transcripción</summary>
+    <p>
+      Persona A: ¿La bʼaluk chi kʼojol?<br>
+      Persona B: Jaʼ, chiʼ kʼakʼ kʼojol we.<br>
+      Persona A: ¡Kʼa maltyox!
+    </p>
+  </details>
+
+  <details>
+    <summary>🧠 Ejercicio</summary>
+    <p><strong>Pregunta:</strong> ¿Qué palabra usan para decir "fuego" en la conversación?</p>
+    <ul>
+      <li>🔘 a) bʼaluk</li>
+      <li>🔘 b) kʼakʼ</li>
+      <li>🔘 c) chiʼ</li>
+    </ul>
+  </details>
+
+</section>
+  </main>
+
+  <script>
+    function playAudio(nombre) {
+      const audio = new Audio(`assets/audio/${nombre}.mp3`);
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
