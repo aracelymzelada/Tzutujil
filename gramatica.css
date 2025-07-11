@@ -152,3 +152,51 @@ audio {
   width: 100%;
   border-radius: 10px;
 }
+.vocabulario-videos {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.titulo-videos {
+  font-size: 2rem;
+  color: #4e6a5b;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion-videos {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.grid-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.video-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.video-descripcion {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
